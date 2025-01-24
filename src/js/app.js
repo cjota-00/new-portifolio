@@ -42,3 +42,4 @@ document.querySelector('.close-contact').addEventListener('click',()=>{
     asideCont.style.display = "none"
 })
 
+
