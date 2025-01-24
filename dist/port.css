@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    ---bg-black:#0B0B0D;
+    ---bg-purple1:#7E5EF2;
+    ---bg-purple2:#190F40;
+    ---bg-purple3:#372773;
+    ---font-title:"Roboto Condensed", serif;
+    ---font-logo: "Jersey 10", serif;
+    ---font-text: "Josefin Sans", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #FFF;
+}
+/*HEADER*/
+header{
+    height: 70px;
+}
+nav .logo{
+    font-family: var(---font-logo);
+    font-size: 40px;
+}
+header button img{
+    width: 40px;
+}
+.hamburger{
+    z-index: 1;
+}
+/*nav-bar mobile*/
+.nav-mobile{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -250px;
+    border-radius: 0 0 20% 20%;
+    transition: all ease .2s;
+
+}
+.nav-mobile.active{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 0 0 20% 20%;
+}
+.nav-mobile.active header.hamburger{
+    position: fixed;
+    top: 26px;
+    right: 16px;
+    border-top-color: transparent;
+}
+.nav-mobile.active header.hamburger::before{
+    transform: rotate(90px);
+}
+.nav-mobile.active header.hamburger::after{
+    transform: rotate(-70dpx);
+    top: -7px;
+}
+/*end nav-bar mobile*/
+nav ul li:hover{
+    transform: scale(1.05);
+    transition: all ease .2s;
+    color: var(---bg-purple2);
+}
+header .nav-list button:hover{
+    transform: scale(1.1);
+    transition: all ease .3s;
+}
+/*SECTION APREESENTACAO*/
+.apresentacao{
+    height: calc(100vh - 70px);
+}
+.apresentacao-content{
+    font-family: var(---font-text);
+}
+.apresentacao a:hover{
+    transition: all .2s linear;
+    opacity: .7;
+}
+/*SECTION ABOUT ME*/
+.about-me{
+    height: 100vh;
+}
+.about-me .about-me-contet h1{
+    font-size: 30px;
+    font-family: var(---font-text);
+}
+.about-me-text h1{
+    font-size: 35px;
+    font-family: var(---font-title);
+}
+.about-me-text p{
+    font-family: var(---font-text);
+}
+.about-me-right button:hover{
+    transform: scale(1.05);
+    background: var(---bg-purple2);
+    transition: all linear .2s;
+}
+
+.cirlce{
+    background-color: var(---bg-purple1);
+    height: 250px;
+    width: 250px;
+    border-radius: 50% 0 0 50%  ;
+    position: relative;
+}
+.cirlce::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -100px;
+    border-left: 100px solid var(---bg-purple1);
+    border-bottom: 150px solid transparent;
+    border-top: 150px solid transparent;
+    
+}
+.small-cirlce{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(---bg-purple2);
+    font-family: var(---font-text);
+}
+/*SECTION ESPECILIDADES*/
+
+.especialidades h1{
+    font-size: 35px;
+    font-family: var(---font-title);
+}
+/*SECTION HABILIDADES*/
+
+.habilidades h1{
+    font-size: 35px;
+    font-family: var(---font-title);
+}
+/*accordion mobile*/
+.acc-box{
+    width: 100%;
+    background-color: var(---bg-purple2);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.acc-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.acc-text{
+    max-height: 0;
+    overflow: hidden;
+}
+.acc-heading {
+    font-family: 18x;
+    font-weight: 600;
+}
+.symbol{
+    font-size: 20px;
+}
+.acc-text p{
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: left;
+}
+.acc-box.active-acc .acc-text{
+    max-height: 100vh;
+}
+.acc-box.active-acc{
+    background-color: var(---bg-purple1);
+}
+.acc-box.active-acc .acc-heading{
+    font-weight: 600;
+    color: var(---bg-purple2);
+}
+/*end accordion mobile*/
+/*SECTION HABILIDADES DESKTOP*/
+.habili-box h1{
+    font-size: 20px;
+}
+.habili-box{
+    font-family: var(---font-text);
+}
+/*SECTION PROJETOS*/
+.projetos h1{
+    font-size: 35px;
+    font-family: var(---font-title);
+}
+/*projetos mobile*/
+.projetos-mobile-content .imgs-proj{
+    position: relative;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.projetos-mobile-content .imgs-proj .img-proj{
+    width: 300px;
+    height: 150px;
+    opacity: .7;
+    filter: blur(3px);
+    border-radius: 10px;
+}
+.projetos-mobile-content .imgs-proj .link{
+    position: absolute;
+    top: 55px;
+    left: 135px;
+    width: 30px;
+    opacity: .9;
+}
+.projetos-desktop-content .img-proj{
+    opacity: .7;
+    filter: blur(3px);
+}
+.projetos-desktop-content .img-proj:hover{
+    filter: blur(0px);
+    transition: all .2s linear;
+}
+.content-projets{
+    width: 400px;
+}
+
+/*ASIDE*/
+aside{
+    position: fixed;  
+    z-index: 1; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+   }
+   
+   aside img{
+       height: 100px;
+       width: 100px;
+       border-radius: 50%;
+       border: 2px solid var(---color-d);
+   }
+   aside .links{
+       display: flex;
+       justify-content: space-around;
+       width: 80%;
+       margin: auto;
+   }
+   aside .link{
+       background-color: #e2dfdfaf;
+       width: 50px;
+       height: 50px;
+       border-radius: 18px;
+   }
+   aside .link a{
+       color: #0D0D0D;
+       height: 100%;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       text-decoration: none;
+       border-radius: 18px;
+   }
+   aside .body-contato{
+       background-color: #e2dfdfaf;
+       color: #0B0B0D;
+       padding: 10px;
+       border-radius: 10px;
+       margin: auto;
+       margin-top: 30px;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+   }
+   aside .contato{
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       padding: 10px;
+       cursor: pointer;
+   }
+   aside .contato:hover{
+       background-color: #fff;
+   }
+   
+   aside i{
+       color: #0D0D0D;
+   }
+   aside .close-contact{
+       display: inline-block;
+       font-weight: 600;
+       color: #0D0D0D;
+       cursor: pointer;
+   }
