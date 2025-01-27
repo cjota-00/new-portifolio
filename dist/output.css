@@ -598,10 +598,6 @@ video {
   margin-top: 3rem;
 }
 
-.mt-14 {
-  margin-top: 3.5rem;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -612,6 +608,22 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .block {
@@ -638,6 +650,10 @@ video {
   height: 0.5rem;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-\[200px\] {
   height: 200px;
 }
@@ -646,8 +662,28 @@ video {
   height: 100%;
 }
 
-.h-3 {
-  height: 0.75rem;
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-20 {
@@ -680,6 +716,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .max-w-\[350px\] {
@@ -722,6 +762,10 @@ video {
   gap: 5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -732,10 +776,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .rounded-lg {
@@ -900,20 +940,20 @@ video {
   padding-top: 0.5rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
-.pt-5 {
-  padding-top: 1.25rem;
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-center {
@@ -942,6 +982,25 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
 }
 
 .font-bold {
@@ -982,6 +1041,29 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\] {
+  color: ;
+}
+
+.text-indigo-600 {
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity, 1));
+}
+
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#882276\] {
+  --tw-text-opacity: 1;
+  color: rgb(136 34 118 / var(--tw-text-opacity, 1));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1007,6 +1089,10 @@ video {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {
@@ -1049,7 +1135,15 @@ video {
     gap: 2.5rem;
   }
 
+  .md\:p-0 {
+    padding: 0px;
+  }
+
   .md\:pt-6 {
     padding-top: 1.5rem;
+  }
+
+  .md\:pt-0 {
+    padding-top: 0px;
   }
 }

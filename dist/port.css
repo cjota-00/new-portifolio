@@ -110,9 +110,15 @@ header .nav-list button:hover{
 .about-me{
     height: 100vh;
 }
+.about-me-left{
+    font-family: var(---font-text);
+}
 .about-me .about-me-contet h1{
     font-size: 30px;
     font-family: var(---font-text);
+}
+.about-me .about-me-mobile h1{
+    font-size: 20px;
 }
 .about-me-text h1{
     font-size: 35px;
